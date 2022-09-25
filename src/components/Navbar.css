@@ -1,0 +1,7 @@
+.main_navbar > ul{
+    display: flex;
+}
+
+.main_navbar > ul li{
+    margin:1rem;
+}
