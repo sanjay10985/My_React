@@ -1,5 +1,11 @@
 import React from 'react';
-import './Navbar.css'
+import './Navbar.css';
+import Home from './Home';
+import {Link ,Routes ,Route} from 'react-router-dom';
+import Contact from './Contact';
+import About from './About';
+import Blog from './Blog';
+
 
 function Navbar() {
   return (
@@ -7,15 +13,22 @@ function Navbar() {
         <nav className="main_navbar">
           <h1>Techfornerd</h1>
             <ul>
-                <li>Home</li>
-                <li>Blog</li>
-                <li>Contact</li>
-                <li>About</li>
-            </ul>
+                <li> <Link to="/">Home</Link> </li>
+                <li> <Link to="/blog">Blog</Link></li>
+                <li> <Link to="/contact">Contact</Link> </li>
+                <li> <Link to="/about">About</Link> </li>
+            </ul> 
             <div className="nav_right">
               <button id="subscribe_button">Subscribe</button>
             </div>
         </nav>
+
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/blog" element={<Blog/>}/>
+        </Routes>
     </div>
   )
 }
