@@ -6,6 +6,16 @@
 
 .main_navbar > ul{
     display: flex;
+    list-style-type: none;
+}
+
+.main_navbar > ul li .nav_link{
+    color: black;
+}
+
+.main_navbar > ul li .nav_link:hover{
+    position:absolute;
+    font-size: ;
 }
 
 .main_navbar > ul li{

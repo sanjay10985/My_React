@@ -13,10 +13,10 @@ function Navbar() {
         <nav className="main_navbar">
           <h1>Techfornerd</h1>
             <ul>
-                <li> <Link to="/">Home</Link> </li>
-                <li> <Link to="/blog">Blog</Link></li>
-                <li> <Link to="/contact">Contact</Link> </li>
-                <li> <Link to="/about">About</Link> </li>
+                <li> <Link className='nav_link' to="/">Home</Link> </li>
+                <li> <Link className='nav_link' to="/blog">Blog</Link></li>
+                <li> <Link className='nav_link' to="/contact">Contact</Link> </li>
+                <li> <Link className='nav_link' to="/about">About</Link> </li>
             </ul> 
             <div className="nav_right">
               <button id="subscribe_button">Subscribe</button>
