@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
 
-function About() {
+function About({ img }) {
   return (
-    <div className='about'>
-        <h1>This is a about page</h1>
+    <div className="about">
+      <h1>{img.text}</h1>
+      <img src={img.image} alt="" />
     </div>
-  )
+  );
 }
 
-export default About
+export default About;

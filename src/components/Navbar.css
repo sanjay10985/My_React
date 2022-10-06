@@ -7,18 +7,44 @@
 .main_navbar > ul{
     display: flex;
     list-style-type: none;
+    /* position: relative; */
 }
 
 .main_navbar > ul li .nav_link{
     color: black;
+    background-color: gray;
 }
 
 .main_navbar > ul li .nav_link:hover{
-    position:absolute;
-    font-size: ;
+    font-size: 19px;
 }
 
 .main_navbar > ul li{
     margin:1rem;
 }
 
+.main_navbar > ul #blog_link{
+    /* position: relative; */
+}
+
+#blog_link #blog_dropdown{
+    display: none;
+    position: absolute;
+    /* left: -15px; */
+}
+
+#blog_link:hover  #blog_dropdown{
+    display: block;
+    width:max-content;
+    /* color: bl; */
+    
+}
+
+#blog_link #blog_dropdown ul li{
+    background-color: rebeccapurple;
+    padding: 10px;
+}
+
+.main_navbar .blog_dropdown ul li{
+    background-color: red;
+}

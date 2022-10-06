@@ -14,7 +14,16 @@ function Navbar() {
           <h1>Techfornerd</h1>
             <ul>
                 <li> <Link className='nav_link' to="/">Home</Link> </li>
-                <li> <Link className='nav_link' to="/blog">Blog</Link></li>
+                <li id="blog_link"> <Link className='nav_link'  to="/blog">Blog</Link>
+                  <div id='blog_dropdown'>
+                    <ul>
+                      <li>blog-1</li>
+                      <li>blog-1</li>
+                      <li>blog-1</li>
+                      <li>blog-1</li>
+                    </ul>
+                  </div>
+                </li>
                 <li> <Link className='nav_link' to="/contact">Contact</Link> </li>
                 <li> <Link className='nav_link' to="/about">About</Link> </li>
             </ul> 
